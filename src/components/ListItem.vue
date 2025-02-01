@@ -12,6 +12,7 @@
         <v-tooltip
           location="top"
           v-for="action in actions"
+          :open-delay="300"
           :key="action.id"
         >
           <template #activator="{ props }">
