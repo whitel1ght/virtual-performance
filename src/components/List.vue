@@ -52,7 +52,7 @@ const items = ref([
 ])
 </script>
 
-<style>
+<style lang="scss">
 .items-list {
   background-color: #f5f5f5;
   height: 600px;
