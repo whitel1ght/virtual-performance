@@ -6,6 +6,3 @@
 <script setup>
 import UsualList from '@/components/UsualList.vue'
 </script>
-
-<style>
-</style>

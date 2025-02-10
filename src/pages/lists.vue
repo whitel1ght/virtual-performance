@@ -1,7 +1,7 @@
 <template>
   <slide-layout>
     <div class="slide">
-      <h1 class="text-center">Lists</h1>
+      <h1 class="text-center">Lists. Things to keep in mind.</h1>
 
       <ol>
         <li><strong>Virtual List:</strong> A list that renders only the visible items, improving performance and memory efficiency.</li>
