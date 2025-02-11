@@ -1,11 +1,20 @@
 <template>
   <MainLayout>
-    <h1 class="text-center"> Custom Virtual List </h1>
-    <List class="mt-4" />
+    <slide-layout>
+      <div class="slide">
+        <h1 class="text-center">Lists. Things to keep in mind.</h1>
+
+        <ol>
+          <li><strong>Virtual List:</strong> A list that renders only the visible items, improving performance and memory efficiency.</li>
+          <li><strong>Usual List:</strong> A list that renders all items, suitable for small datasets.</li>
+        </ol>
+      </div>
+    </slide-layout>
   </MainLayout>
 </template>
 
 <script setup>
+import SlideLayout from '@/components/layouts/SlideLayout.vue'
 import MainLayout from '@/components/layouts/MainLayout.vue'
-import List from '@/components/List.vue'
 </script>
+

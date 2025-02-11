@@ -7,7 +7,7 @@
 <style lang="scss">
 .slide-wrapper {
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 56px);
   align-content: center;
 
   .slide {

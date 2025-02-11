@@ -100,19 +100,6 @@ onBeforeUnmount(() => {
     width: 100%;
     position: absolute;
     list-style: none;
-
-    &::after {
-      // content: '';
-      // position: absolute;
-      // inset: 0;
-      // z-index: 5;
-      // border-radius: $border-radius-base;
-      // border: 3px solid var(--focus-color);
-      // opacity: 0;
-      // transition: opacity $transition-bezier;
-      // pointer-events: none;
-      // user-select: none;
-    }
   }
 }
 </style>

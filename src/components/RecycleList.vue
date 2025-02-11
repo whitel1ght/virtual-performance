@@ -1,5 +1,6 @@
 <template>
   <RecycleScroller
+    class="items-list"
     :items="items"
     :item-size="100"
     style="height: 600px;"
@@ -22,3 +23,13 @@ const items = Array.from({ length: 1000 }, (_, i) => ({
 }))
 
 </script>
+
+<style>
+.items-list {
+  background-color: #f5f5f5;
+  height: 600px;
+  width: 600px;
+  overflow-y: auto;
+  margin: auto;
+}
+</style>

@@ -1,17 +1,28 @@
 <template>
   <nav>
     <ul>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/pros">About</router-link></li>
-      <li><router-link to="/cons">Contact</router-link></li>
+      <li v-for="link in links" :key="link.to">
+        <router-link :to="link.to">{{ link.text }}</router-link>
+      </li>
     </ul>
   </nav>
 </template>
 
 <script setup>
+const links = [
+  { to: '/', text: 'Lists' },
+  { to: '/usual-list', text: 'Usual' },
+  { to: '/default-example', text: 'Virtual Example' },
+  { to: '/virtual-list-types', text: 'Virtual Types' },
+  { to: '/custom-virtual-scroll', text: 'Custom Dynamic' },
+  { to: '/vuetify', text: 'Vuetify Dynamic' },
+  { to: '/recycle-scroll', text: 'Recycle Scroll' },
+  { to: 'pros', text: 'Pros' },
+  { to: 'cons', text: 'Cons' },
+]
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 nav {
   background-color: #f8f9fa;
   padding: 1rem;
