@@ -21,7 +21,7 @@ const items = Array.from({ length: 100 }, (_, i) => ({
 }))
 </script>
 
-<style>
+<style lang="scss">
 .items-list {
   background-color: #f5f5f5;
   height: 600px;

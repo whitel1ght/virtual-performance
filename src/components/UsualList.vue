@@ -22,7 +22,10 @@ const items = Array.from({ length: 100 }, (_, i) => ({
 
 <style lang="scss">
 .usual-list {
+  background-color: #f5f5f5;
   height: 600px;
+  width: 600px;
   overflow-y: auto;
+  margin: auto;
 }
 </style>

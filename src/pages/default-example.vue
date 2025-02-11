@@ -5,6 +5,7 @@
     <v-virtual-scroll
       :items="items"
       :height="600"
+      class="list"
     >
       <template #default="{ item }">
         {{ item.name }}
@@ -21,3 +22,11 @@ const items = Array.from({ length: 1000 }, (_, i) => ({
   name: `Item ${i}`
 }))
 </script>
+
+<style lang="scss">
+.list {
+  height: 600px;
+  width: 600px;
+  margin: auto;
+}
+</style>

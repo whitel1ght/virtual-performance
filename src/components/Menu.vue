@@ -24,7 +24,6 @@ const links = [
 
 <style lang="scss" scoped>
 nav {
-  background-color: #f8f9fa;
   padding: 1rem;
 }
 
@@ -32,6 +31,7 @@ ul {
   list-style: none;
   padding: 0;
   display: flex;
+  justify-content: space-evenly;
   gap: 1rem;
 }
 
@@ -41,10 +41,10 @@ li {
 
 a {
   text-decoration: none;
-  color: #007bff;
+  color: #000000;
 }
 
 a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 </style>
