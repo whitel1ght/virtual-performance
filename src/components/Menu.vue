@@ -26,8 +26,9 @@ const links = [
   { to: '/custom-virtual-scroll', text: 'Custom Dynamic' },
   { to: '/vuetify', text: 'Vuetify Dynamic' },
   { to: '/recycle-scroll', text: 'Recycle Scroll' },
-  { to: 'pros', text: 'Pros' },
-  { to: 'cons', text: 'Cons' },
+  { to: '/pros', text: 'Pros' },
+  { to: '/cons', text: 'Cons' },
+  { to: '/accessibility', text: 'Accessibility' },
 ]
 
 const isActive = path => route.path === path
