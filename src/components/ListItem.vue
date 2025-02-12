@@ -1,5 +1,9 @@
 <template>
-  <div class="list-item">
+  <div
+    class="list-item"
+    @mouseover="debounceMouseover"
+    @mouseleave="hover = false"
+  >
     <div class="list-item__checkbox">
       <v-checkbox-btn density="compact" />
     </div>
@@ -11,6 +15,7 @@
       <div class="list-item__content-actions">
         <v-tooltip
           location="top"
+          v-if="hover"
           v-for="action in actions"
           :open-delay="300"
           :key="action.id"
@@ -34,12 +39,15 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 const props = defineProps({
   item: {
     type: Object,
     default: () => []
   }
 })
+
+const hover = ref(false)
 
 const actions = [
   {
@@ -67,6 +75,22 @@ const actions = [
     icon: 'mdi-content-copy'
   }
 ]
+
+// methods
+const debounce = (fn, delay) => {
+  let timeoutId
+  return function (...args) {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
+      timeoutId = null
+      fn(...args)
+    }, delay)
+  }
+}
+
+const debounceMouseover = debounce(() => {
+  hover.value = true
+}, 100)
 </script>
 
 <style lang="scss">
