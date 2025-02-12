@@ -29,7 +29,6 @@
           <span>{{ action.name }}</span>
         </v-tooltip>
       </div>
-
     </div>
   </div>
 </template>
